@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        h3{
+            font-size: 70px;
+        }
+        h2{
+            text-align: center;
+        }
+        .container{
+            width: 450px;
+            border: 5px solid black;
+            padding: 100px;
+            margin: auto;
+            height: 450px;
+        } 
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h2><i>GUESS THE MOVIE NAME</i></h2> 
+        <div id="word-container">
+            <p id="word"></p>
+        </div>  
+   <br>
+   <h3> 🏚️ + 🌻</h3>
+    <br><br>
+    <div id="guess-container">
+        <input type="text" id="guess-input" placeholder="ENTER YOUR GUESS">
+        <button onclick="checkGuess()">Submit</button><br><br>
+        <button><a href="./7.html">Finish</a></button>
+        <button><a href="./5.html">Back</a></button>
+    </div>
+    <div id="message"></div>
+    <p>YOU HAVE <span id="countdowntimer"> 30 </span> SECONDS</p>
+    <h2 id="demo"></h2>
+<script>
+    var timeleft =30;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+const myTimeout = setTimeout(myGreeting, 30000);
+    
+    function myGreeting() {
+      document.getElementById("demo").innerHTML = "House Full"
+    }
+    var timer = setTimeout(function() {
+             window.location='http://127.0.0.1:5500/Html/css/javascript/responive%20design/project/7.html'
+    }, 35000);
+    </script>
+    <script src="script6.js"></script>
+</div>
+</body>
+</html>

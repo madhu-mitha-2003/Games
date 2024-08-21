@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+#word-container{
+    margin-bottom: 20px;
+}
+
+#guess-input{
+    padding: 5px;
+}
+
+button{
+    padding: 5px, 10px;
+    /* background-color: white; */
+    /* color: black; */
+    
+    cursor: pointer;
+}
+
+#message{
+    margin-top: 20px;
+    font-weight: bold;
+}
